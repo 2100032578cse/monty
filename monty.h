@@ -40,5 +40,9 @@ typedef struct instruction_s
 void fun_push(stack_t **head, unsigned int counter);
 void fun_pop(stack_t **head, unsigned int counter);
 void fun_pall(stack_t **head, unsigned int counter);
+void add_node(stack_t **head, int n);
+void add_queue(stack_t **head, int n);
+void freestack(stack_t *head);
+void fun_queue(stack_t **head, unsigned int counter);
 
 #endif /* MONTY */
