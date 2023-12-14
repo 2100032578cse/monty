@@ -35,23 +35,3 @@ void fun_push(stack_t **head, unsigned int counter)
 	else
 		add_queue(head, n);
 }
-/**
- * fun_pall - prints the stack eles
- * @counter: the counter
- * @head: head of stack
- * Return: no return
-*/
-void fun_pall(stack_t **head, unsigned int counter)
-{
-	stack_t *h;
-	(void)counter;
-
-	h = *head;
-	if (h == NULL)
-		return;
-	while (h)
-	{
-		printf("%d\n", h->n);
-		h = h->next;
-	}
-}
