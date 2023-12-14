@@ -37,5 +37,8 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+void fun_push(stack_t **head, unsigned int counter);
+void fun_pop(stack_t **head, unsigned int counter);
+void fun_pall(stack_t **head, unsigned int counter);
 
 #endif /* MONTY */
