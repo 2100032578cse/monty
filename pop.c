@@ -1,9 +1,9 @@
 #include "monty.h"
 /**
- * fun_pop - prints the top
- * @head: stack head
+ * fun_pop - the top element
+ * @head: the header of stACK
  * @counter: line_number
- * Return: no return
+ * Return: nothing to return
 */
 void fun_pop(stack_t **head, unsigned int counter)
 {
@@ -21,3 +21,16 @@ void fun_pop(stack_t **head, unsigned int counter)
 	*head = h->next;
 	free(h);
 }
+/**
+ * fun_queue - prints the top element
+ * @head: the stack pointer header
+ * @counter: the counter
+ * Return: nothing
+*/
+void fun_queue(stack_t **head, unsigned int counter)
+{
+	(void)head;
+	(void)counter;
+	bus.lifi = 1;
+}
+

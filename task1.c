@@ -21,19 +21,19 @@ void fun_push(stack_t **head, unsigned int counter)
 		{ fprintf(stderr, "L%d: usage: push integer\n", counter);
 			fclose(bus.file);
 			free(bus.content);
-			free_stack(*head);
+			freestack(*head);
 			exit(EXIT_FAILURE); }}
 	else
 	{ fprintf(stderr, "L%d: usage: push integer\n", counter);
 		fclose(bus.file);
 		free(bus.content);
-		free_stack(*head);
+		freestack(*head);
 		exit(EXIT_FAILURE); }
 	n = atoi(bus.arg);
 	if (bus.lifi == 0)
-		addnode(head, n);
+		add_node(head, n);
 	else
-		addqueue(head, n);
+		add_queue(head, n);
 }
 /**
  * fun_pall - prints the stack eles
