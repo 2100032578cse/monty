@@ -60,5 +60,5 @@ void add_queue(stack_t **head, int n);
 void freestack(stack_t *head);
 void fun_queue(stack_t **head, unsigned int counter);
 int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
-
+void fun_pint(stack_t **head, unsigned int counter);
 #endif /* MONTY */
